@@ -1,4 +1,4 @@
-import { constants } from "./constants.js";
+import { constants } from "constants.js";
 
 export function populateSelectOptions() {
   if (window.location.pathname.includes("preferences.html")) {
