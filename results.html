@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results - PriceBite</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="menu-icon" tabindex="0" role="button" aria-label="Toggle menu">&#9776;</div>
+      <h1 class="logo">PRICEBITE</h1>
+      <div class="user-info">
+        <span>Kwaku Ananse</span>
+        <div class="user-icon">👤</div>
+      </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav id="side-menu" class="side-menu hidden" role="navigation" aria-label="Page links">
+      <ul>
+        <li><a href="index.html">Preferences</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="plan.html">Purchase Plan</a></li>
+        <li><a href="details.html">Product Details</a></li>
+        <li><a href="dashboard.html">Business Dashboard</a></li>
+      </ul>
+    </nav>
+
+    <!-- Budget -->
+    <div class="budget-bar">
+      Budget Tracker: $300 of $2000
+      <div class="progress-container">
+        <div class="progress-fill" style="width: 15%"></div>
+      </div>
+    </div>
+
+    <!-- Heading -->
+    <div class="search-heading">
+      <h3>Search Results for “Laptop”</h3>
+      <p>Results are based on your budget, preferences and recommended spend based on your profile.</p>
+      <div class="alert">Good news! Prices for some items in your wishlist have dropped by up to 15%!</div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="results-layout">
+      <!-- Filters -->
+      <aside class="filters-panel" aria-label="Filter options">
+        <h3>Condition</h3>
+        <label><input type="radio" name="condition" value="all" /> All</label>
+        <label><input type="radio" name="condition" value="new" /> New</label>
+        <label><input type="radio" name="condition" value="resell" /> Resell</label>
+
+        <h3>Brand Preferences</h3>
+        <label for="brand-select" class="sr-only">Select brand preferences</label>
+        <select id="brand-select" multiple>
+          <option>Hold Shift to Select Multiple</option>
+        </select>
+
+        <h3>Price Range</h3>
+        <input type="range" min="0" max="2000" />
+        <div class="price-inputs">
+          <input type="text" placeholder="Enter Min($)" aria-label="Min price" />
+          <input type="text" placeholder="Enter Max($)" aria-label="Max price" />
+        </div>
+
+        <h3>Graphics Card</h3>
+        <select aria-label="Select graphics card">
+          <option>Select Graphics Card</option>
+        </select>
+
+        <h3>Screen Size</h3>
+        <select aria-label="Select screen size">
+          <option>Select Preferred Screen Size</option>
+        </select>
+
+        <button class="apply-btn" type="button">Apply Filters</button>
+      </aside>
+
+      <!-- Results -->
+      <section class="results-grid" aria-label="Search results">
+        <div class="result-card">
+          <img src="https://via.placeholder.com/150" alt="Dell XPS" />
+          <p><strong>Product:</strong> Dell XPS 15</p>
+          <p>Price: $750</p>
+          <p>Condition: Resell (Great)</p>
+        </div>
+
+        <div class="result-card">
+          <img src="https://via.placeholder.com/150" alt="Macbook Air" />
+          <p><strong>Product:</strong> Macbook Air (2020)</p>
+          <p>Price: $950</p>
+          <p>Condition: Resell (Good)</p>
+        </div>
+      </section>
+
+      <!-- Suggestions -->
+      <aside class="suggestions-panel" aria-label="Suggestions">
+        <div class="search-box">
+          <input type="text" placeholder="Find new products..." aria-label="Search suggestions" />
+        </div>
+
+        <div class="suggestion-card" data-product="HP Mouse">
+          <img src="https://via.placeholder.com/100" alt="HP Mouse" />
+          <p><strong>Product:</strong> HP Mouse</p>
+          <p>Price: $25</p>
+          <p><a href="#" class="wishlist-link">Add to wishlist ➕</a></p>
+        </div>
+
+        <div class="suggestion-card" data-product="Work perch">
+          <img src="https://via.placeholder.com/100" alt="Work perch" />
+          <p><strong>Product:</strong> Work perch</p>
+          <p>Price: $25</p>
+          <p><a href="#" class="wishlist-link">Add to wishlist ➕</a></p>
+        </div>
+      </aside>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

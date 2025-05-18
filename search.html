@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PriceBite - Search</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="menu-icon" tabindex="0" role="button" aria-label="Toggle menu">&#9776;</div>
+      <h1 class="logo">PRICEBITE</h1>
+      <div class="user-info">
+        <span>Kwaku Ananse</span>
+        <div class="user-icon">👤</div>
+      </div>
+    </header>
+
+    <nav id="side-menu" class="side-menu hidden" role="navigation" aria-label="Page links">
+      <ul>
+        <li><a href="index.html">Preferences</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="plan.html">Purchase Plan</a></li>
+        <li><a href="details.html">Product Details</a></li>
+        <li><a href="dashboard.html">Business Dashboard</a></li>
+      </ul>
+    </nav>
+
+    <!-- Budget Tracker -->
+    <div class="budget-tracker">
+      <div class="progress-bar">
+        <div class="progress" style="width: 40%"></div>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <section class="intro">
+      <p>Choose a category and set your maximum price to get the best suggestions</p>
+    </section>
+
+    <!-- Search Layout -->
+    <main class="search-grid">
+      <!-- Left: Filters Panel -->
+      <div class="filters-panel">
+        <h3>Additional Filters</h3>
+
+        <p>Condition</p>
+        <label><input type="radio" name="condition" value="all" /> All</label>
+        <label><input type="radio" name="condition" value="new" /> New</label>
+        <label><input type="radio" name="condition" value="resell" /> Resell</label>
+
+        <p>Brand Preferences</p>
+        <label for="brand-select" class="sr-only">Select brand</label>
+        <select id="brand-select" multiple aria-label="Select preferred brands">
+          <option>Hold Shift to Select Multiple</option>
+        </select>
+
+        <p>Customer Reviews:</p>
+        <div class="stars" aria-label="Star filter">★ ★ ★ ★ ★ & UP</div>
+
+        <button class="show-more" type="button">Show More</button>
+        <button class="apply-btn" type="button">Apply Filters</button>
+      </div>
+
+      <!-- Center: Category Filters -->
+      <div class="main-filters">
+        <label for="category-select">Categories</label>
+        <select id="category-select" aria-label="Select category">
+          <option>Select a category</option>
+        </select>
+
+        <!-- Quick Icons -->
+        <div class="quick-icons" aria-label="Quick category icons">
+          <span>🖥️</span>
+          <span>📱</span>
+          <span>🖨️</span>
+          <span>🎧</span>
+          <span>🍽️</span>
+          <p class="quick-text">Customize Quick Categories</p>
+        </div>
+
+        <!-- Price Range -->
+        <label for="price-range">Price</label>
+        <div class="price-slider">
+          <input id="price-range" type="range" min="0" max="2000" value="1000" aria-label="Price range slider" />
+          <div class="price-inputs">
+            <input type="text" placeholder="Enter Min ($)" aria-label="Minimum price" />
+            <input type="text" placeholder="Enter Max ($)" aria-label="Maximum price" />
+          </div>
+        </div>
+
+        <button class="search-btn" type="button">Search</button>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
