@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PriceBite | Login</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <p>Welcome! This is an MVP of PriceBite, a price alert and recommendation system for students. Please log in with either of these to see from the perspective of a student or seller.</p>
+      <h4>User Perspective</h4>
+      <p>Username: student<br />Password: student</p>
+      <h4>Seller Perspective</h4>
+      <p>Username: seller<br />Password: seller</p>
+    </div>
+
+    <form id="login-form" autocomplete="off">
+      <fieldset>
+        <legend>User Login</legend>
+        <p id="error-message" class="error-message"></p>
+
+        <!-- Hidden inputs to fool autofill -->
+        <input type="text" name="fakeusernameremembered" id="fake-username" style="display: none" autocomplete="username" />
+        <input type="password" name="fakepasswordremembered" id="fake-password" style="display: none" autocomplete="new-password" />
+
+        <!-- Visible inputs for user -->
+        <input type="text" id="user-visible" placeholder="Username" autocomplete="off" required />
+        <input type="password" id="password-visible" placeholder="Password" autocomplete="off" required />
+
+        <button type="submit">Login</button>
+      </fieldset>
+    </form>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

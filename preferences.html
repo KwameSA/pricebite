@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PriceBite Preferences</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="menu-icon" tabindex="0" role="button" aria-label="Toggle navigation">&#9776;</div>
+      <h1 class="logo">PRICEBITE</h1>
+      <div class="user-info" id="user-info">
+        <span>Kwaku Ananse</span>
+        <div class="user-icon">👤</div>
+        <div class="user-menu" id="user-menu">
+          <button id="logout-btn">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <nav id="side-menu" class="side-menu hidden" role="navigation" aria-label="Page links">
+      <ul>
+        <li><a href="index.html" data-role="student">Preferences</a></li>
+        <li><a href="search.html" data-role="student">Search</a></li>
+        <li><a href="results.html" data-role="student">Results</a></li>
+        <li><a href="plan.html" data-role="student">Purchase Plan</a></li>
+        <li><a href="details.html" data-role="student">Product Details</a></li>
+        <li><a href="dashboard.html" data-role="seller">Business Dashboard</a></li>
+      </ul>
+    </nav>
+
+    <!-- Intro -->
+    <section class="intro">
+      <h2>Set Up Your Preferences</h2>
+      <p>PriceBite will learn from your preferences to offer products that meet your quality needs!</p>
+      <p>Help us understand your needs to recommend the best electronics for you.</p>
+    </section>
+
+    <!-- Preferences Form -->
+    <main class="form-grid">
+      <div class="form-card academic-profile">
+        <h3>Academic Profile</h3>
+        <label for="course">Course of Study</label>
+        <select id="course">
+          <option>Select Your Course</option>
+        </select>
+
+        <label for="level">Educational Level</label>
+        <select id="level">
+          <option>Select Year of Study</option>
+        </select>
+      </div>
+
+      <div class="form-card budget-constraints">
+        <h3>Set Budget Constraints</h3>
+        <label for="budget-amount">Semester Budget</label>
+        <input id="budget-amount" type="text" placeholder="Enter your budget in USD" />
+
+        <p>Would you like recommendations to be based on budget plan?</p>
+        <label><input type="radio" name="budget" value="yes" /> Yes</label>
+        <label><input type="radio" name="budget" value="no" /> No</label>
+
+        <p>Would you like to set a price threshold for alerts?</p>
+        <label><input type="radio" name="threshold" value="yes" /> Yes</label>
+        <label><input type="radio" name="threshold" value="no" /> No</label>
+      </div>
+
+      <div class="form-card shopping-preferences">
+        <h3>Shopping Preferences</h3>
+
+        <p>What do you look for in a product?</p>
+        <label><input type="checkbox" name="features" value="performance" /> Performance (e.g., processing power, graphics)</label>
+        <label><input type="checkbox" name="features" value="affordability" /> Affordability</label>
+        <label><input type="checkbox" name="features" value="brand" /> Brand reliability</label>
+        <label><input type="checkbox" name="features" value="eco" /> Eco-friendliness (repurposed/used products)</label>
+
+        <p>Would you like suggestions for peripherals (e.g., keyboards, mice)?</p>
+        <label><input type="radio" name="peripherals" value="yes" /> Yes</label>
+        <label><input type="radio" name="peripherals" value="no" /> No</label>
+
+        <p>Do you prefer new or used electronics?</p>
+        <select id="condition">
+          <option>Select preference</option>
+          <option value="new">New</option>
+          <option value="used">Used</option>
+          <option value="both">Both</option>
+        </select>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="form-footer">
+      <button type="button">Save Changes</button>
+      <p>You can update your preferences at any time from your profile settings.</p>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

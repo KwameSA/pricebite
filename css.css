@@ -1,0 +1,755 @@
+/* === Global Styles === */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background: #2c2e3c;
+  color: white;
+}
+
+/* === Navigation Bar === */
+.navbar {
+  background-color: #202e52;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo,
+.menu-icon {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-icon {
+  background: #ccc;
+  border-radius: 50%;
+  padding: 0.3rem;
+  color: #333;
+}
+
+/* === Intro / Header === */
+.intro {
+  background: #2e2e2e;
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+/* === Form Layout === */
+.form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.form-card {
+  flex: 1 1 300px;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.academic-profile {
+  background: #4b2c52;
+}
+
+.budget-constraints {
+  background: #1c2c56;
+}
+
+.shopping-preferences {
+  background: #234232;
+}
+
+.form-card h3 {
+  margin-top: 0;
+}
+
+.form-card label,
+.form-card p {
+  display: block;
+  margin-top: 1rem;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: none;
+  border-radius: 5px;
+}
+
+/* === Form Footer === */
+.form-footer {
+  text-align: center;
+  background: #2e2e2e;
+  padding: 2rem 1rem;
+}
+
+.form-footer button {
+  padding: 0.7rem 2rem;
+  border: none;
+  background: #0554d3;
+  color: white;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.form-footer p {
+  margin-top: 1rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* === Budget Tracker (extended) === */
+.budget-tracker {
+  background-color: #202e52;
+  padding: 0.5rem 2rem;
+}
+
+/* === Progress Bar === */
+.progress-bar {
+  background: #ccc;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.progress {
+  background: linear-gradient(to right, #62de8a, #9e7aff);
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* === Secondary Intro (Search Page) === */
+.intro {
+  text-align: center;
+  padding: 1rem;
+  font-style: italic;
+  color: #d5d5d5;
+}
+
+/* === Search Grid Layout === */
+.search-grid {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* === Filter Panel === */
+.filters-panel {
+  background: #5d3c3c;
+  padding: 1.5rem;
+  border-radius: 10px;
+  flex: 1 1 250px;
+}
+
+.filters-panel label,
+.filters-panel p {
+  display: block;
+  margin-top: 1rem;
+}
+
+/* === Filters Panel Continued === */
+.filters-panel select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.stars {
+  color: gold;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* === Buttons Shared === */
+.show-more,
+.apply-btn {
+  margin-top: 1rem;
+  padding: 0.6rem;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.apply-btn {
+  background: #0554d3;
+  color: white;
+}
+
+/* === Main Filter Section === */
+.main-filters {
+  flex: 1 1 500px;
+  background: transparent;
+}
+
+.main-filters label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.main-filters select,
+.main-filters input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  border: none;
+}
+
+/* === Quick Categories === */
+.quick-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.quick-text {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+/* === Price Range Slider === */
+.price-slider {
+  margin-top: 1.5rem;
+}
+
+.price-slider input[type="range"] {
+  width: 100%;
+}
+
+.price-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* === Search Button === */
+.search-btn {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.7rem 3rem;
+  font-size: 1rem;
+  background: #0554d3;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* === Budget Summary Bar === */
+.budget-bar {
+  background: #202e52;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+}
+
+.progress-container {
+  background: #ccc;
+  height: 8px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.progress-fill {
+  background: linear-gradient(to right, #62de8a, #9e7aff);
+  height: 8px;
+  border-radius: 10px;
+}
+
+/* === Search Results Heading === */
+.search-heading {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.alert {
+  background: #d96767;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  color: white;
+}
+
+/* === Search Results Layout === */
+.results-layout {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+/* === Filter Panel Extended (Results Page) === */
+.filters-panel {
+  flex: 1 1 200px;
+  background: #5d3c3c;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.filters-panel h3 {
+  margin-top: 1.2rem;
+}
+
+.filters-panel input[type="text"],
+.filters-panel select {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+/* (already defined `price-inputs`, so skip duplicate) */
+/* === Results Grid === */
+.results-grid {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.result-card {
+  background: #444;
+  border-radius: 8px;
+  padding: 1rem;
+  color: white;
+}
+
+.result-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* === Suggestions Sidebar === */
+.suggestions-panel {
+  flex: 1 1 180px;
+  background: #5d3c3c;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.suggestion-card {
+  background: #3c2c2c;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.suggestion-card img {
+  width: 80%;
+  border-radius: 5px;
+}
+
+/* === Dashboard Header === */
+.dashboard-header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.dashboard-header h2 {
+  margin: 0.5rem 0;
+}
+
+.metrics-tab {
+  background: #ccc;
+  color: #333;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* === Dashboard Grid Layout === */
+.dashboard-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.metrics-left,
+.metrics-center,
+.metrics-right {
+  flex: 1 1 300px;
+}
+
+/* === Metric Item Row === */
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+/* === Dashboard Buttons === */
+.boost-btn,
+.analyze-btn,
+.promote-btn,
+.discount-btn {
+  background: #0554d3;
+  color: white;
+  border: none;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.discount-btn {
+  background: #5cb85c;
+}
+
+/* === Dashboard Table === */
+.metrics-center table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #3a3a3a;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.metrics-center th,
+.metrics-center td {
+  padding: 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid #555;
+}
+
+.metrics-center th {
+  background: #2a2a2a;
+}
+
+/* === Bar Graphs === */
+.bar {
+  background: #444;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.bar-fill {
+  background: #3fc36b;
+  padding: 0.4rem;
+  border-radius: 4px;
+  color: black;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* === Disclaimer Text === */
+.disclaimer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/* === Budget Bar (Plan Page) === */
+.budget-bar {
+  background: #202e52;
+  text-align: center;
+  padding: 1rem;
+}
+
+.progress-container {
+  background: #ccc;
+  border-radius: 10px;
+  height: 10px;
+  margin: 0.5rem auto;
+  width: 80%;
+}
+
+.progress-fill {
+  background: linear-gradient(to right, #62de8a, #9e7aff);
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* === Title Section === */
+.title-section {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* === Layout for Planner Page === */
+.planner-layout {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* === Priority List Panel === */
+.priority-panel {
+  background: #f1f1f1;
+  color: #333;
+  padding: 1rem;
+  border-radius: 12px;
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
+.priority-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.priority-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.priority-item input[type="text"] {
+  width: 70px;
+  padding: 0.3rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.priority-item select {
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+.rank {
+  width: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* === Toggle Switch === */
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+}
+
+/* === Toggle Styles === */
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle span {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 34px;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.toggle span::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.toggle input:checked + span {
+  background-color: #4caf50;
+}
+
+.toggle input:checked + span::before {
+  transform: translateX(20px);
+}
+
+/* === Wishlist Panel === */
+.wishlist-panel {
+  background: #f1f1f1;
+  color: #333;
+  border-radius: 12px;
+  padding: 1rem;
+  flex: 1 1 250px;
+  max-width: 300px;
+  height: fit-content;
+}
+
+.wishlist-search {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.wishlist-item {
+  background: white;
+  padding: 0.6rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remove {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* === Footer Button === */
+.footer {
+  text-align: center;
+  padding: 2rem;
+}
+
+.review-btn {
+  background: #0554d3;
+  color: white;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* === Product Layout Wrapper === */
+.product-layout {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* === Image Panel === */
+.image-panel {
+  flex: 1 1 300px;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.thumbnail-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.thumbnail-row img {
+  width: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* === Suggested Accessories === */
+.suggested-accessories {
+  margin-top: 1rem;
+}
+
+.suggested-accessories img {
+  width: 100px;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+}
+
+/* === Product Details Section === */
+.details-panel {
+  flex: 2 1 400px;
+  background: #3a3a3a;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.details-panel h2 {
+  margin-top: 0;
+}
+
+.details-panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.price-box {
+  margin-top: 1rem;
+}
+
+/* === Price & Availability === */
+.now-price {
+  color: lightgreen;
+  margin-left: 0.5rem;
+}
+
+.in-stock {
+  color: lightgreen;
+}
+
+.about {
+  margin-top: 1rem;
+}
+
+/* === Purchase Sidebar === */
+.purchase-panel {
+  background: #5d3c3c;
+  padding: 1rem;
+  border-radius: 10px;
+  flex: 1 1 250px;
+}
+
+.purchase-panel input[type="text"] {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.price-summary h3 {
+  margin: 0;
+}
+
+/* === Monitor Note === */
+.monitor-note {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}

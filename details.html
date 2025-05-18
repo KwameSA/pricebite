@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details - PriceBite</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="menu-icon" tabindex="0" role="button" aria-label="Toggle navigation">&#9776;</div>
+      <h1 class="logo">PRICEBITE</h1>
+      <div class="user-info" id="user-info">
+        <span>Kwaku Ananse</span>
+        <div class="user-icon">👤</div>
+        <div class="user-menu" id="user-menu">
+          <button id="logout-btn">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Budget Tracker -->
+    <section class="budget-tracker">
+      <p>Budget Tracker</p>
+      <div class="progress-container">
+        <div class="progress-fill" style="width: 40%"></div>
+      </div>
+    </section>
+
+    <!-- Side Menu Navigation -->
+    <nav id="side-menu" class="side-menu hidden" role="navigation" aria-label="Page links">
+      <ul>
+        <li><a href="index.html" data-role="student">Preferences</a></li>
+        <li><a href="search.html" data-role="student">Search</a></li>
+        <li><a href="results.html" data-role="student">Results</a></li>
+        <li><a href="plan.html" data-role="student">Purchase Plan</a></li>
+        <li><a href="details.html" data-role="student">Product Details</a></li>
+        <li><a href="dashboard.html" data-role="seller">Business Dashboard</a></li>
+      </ul>
+    </nav>
+
+    <!-- Product Detail Layout -->
+    <main class="product-layout">
+      <!-- LEFT: Image Panel -->
+      <div class="image-panel">
+        <img class="main-image" src="https://via.placeholder.com/350x250" alt="Main view of Dell XPS 15" />
+        <div class="thumbnail-row">
+          <img src="https://via.placeholder.com/80" alt="Dell XPS side view" class="thumbnail" />
+          <img src="https://via.placeholder.com/80" alt="Dell XPS back view" class="thumbnail" />
+          <img src="https://via.placeholder.com/80" alt="Dell XPS open view" class="thumbnail" />
+        </div>
+
+        <div class="suggested-accessories">
+          <p>If you purchase this, you may also need:</p>
+          <img src="https://via.placeholder.com/120x80" alt="Accessory 1" />
+          <img src="https://via.placeholder.com/120x80" alt="Accessory 2" />
+          <img src="https://via.placeholder.com/120x80" alt="Accessory 3" />
+        </div>
+      </div>
+
+      <!-- CENTER: Product Info -->
+      <div class="details-panel">
+        <h2>DELL XPS 15</h2>
+        <h4>Specifications</h4>
+        <ul>
+          <li><strong>Processor:</strong> Core i7</li>
+          <li><strong>RAM:</strong> 16GB</li>
+          <li><strong>Storage:</strong> 512 GB SSD</li>
+          <li><strong>Graphics Card:</strong> NVIDIA GTX 1650</li>
+        </ul>
+
+        <div class="price-box">
+          <p class="discount">-40% OFF! <span class="now-price">Now: $780</span></p>
+          <p>Original Price: $1300</p>
+        </div>
+
+        <div class="about">
+          <h4>About this item</h4>
+          <p><strong>Immersive Visuals:</strong> Watch content come alive with sharp detail and true-to-life colour.</p>
+          <p><strong>Touch Function Row:</strong> Toggle between media and function keys easily.</p>
+          <p><strong>Glass Touchpad:</strong> Haptic touchpad provides precise feedback.</p>
+          <p><strong>Power in Motion:</strong> Lightweight 3.7 lb., slim 18 mm size.</p>
+        </div>
+
+        <div class="seller-note">
+          <h4>Sellers Note</h4>
+          <!-- Optional notes -->
+        </div>
+      </div>
+
+      <!-- RIGHT: Purchase Panel -->
+      <aside class="purchase-panel">
+        <input type="text" placeholder="Find new products..." aria-label="Search products" />
+        <div class="price-summary">
+          <h3>Price: $780</h3>
+          <p class="in-stock">In Stock</p>
+          <p class="last-updated">Last Updated: 24/11/2024 11:42</p>
+        </div>
+        <div class="retailer-info">
+          <p><strong>Retailer:</strong> Coggs and Wheels Electronics</p>
+          <p>Rating: ⭐⭐⭐⭐⭐ (250 Reviews)</p>
+        </div>
+        <button class="buy-btn" type="button" data-url="https://example-retailer.com/dell-xps-15">Buy Now</button>
+        <button class="monitor-btn" type="button">Add for monitoring</button>
+        <p class="monitor-note">We’ll alert you if the price drops or the promotion ends soon.</p>
+      </aside>
+    </main>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
