@@ -838,18 +838,115 @@ button:hover {
   z-index: 1000;
 }
 
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: linear-gradient(135deg, #0057b8 0%, #2f4b80 100%);
+  font-family: Arial, sans-serif;
+}
+/* Banner styling */
 .banner {
   background-color: #2f4b80;
-  border-left: 4px solid #0057b8;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  font-size: 0.95rem;
+  border-left: 6px solid #0057b8;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: white;
+  max-width: 700px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.banner > div {
+  display: flex;
+  gap: 2rem; /* space between the two sections */
+  justify-content: center; /* center horizontally */
+  margin-top: 1rem;
+}
+
+.banner section {
+  background-color: #1e3a63;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  min-width: 150px;
+  flex: 1; /* make them grow equally */
+  max-width: 250px; /* optional, to limit max width */
+}
+
+/* Login form container */
+form#login-form {
+  background: white;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Fieldset styling */
+form#login-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Legend styling */
+form#login-form legend {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #2f4b80;
+  text-align: center;
+}
+
+/* Inputs */
+form#login-form input[type="text"],
+form#login-form input[type="password"] {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1.2rem;
+  border: 1.5px solid #0057b8;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+form#login-form input[type="text"]:focus,
+form#login-form input[type="password"]:focus {
+  border-color: #2f4b80;
+  outline: none;
+}
+
+/* Button */
+form#login-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0057b8;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form#login-form button:hover {
+  background-color: #2f4b80;
+}
+
+/* Error message */
 .error-message {
   color: red;
-  display: none;
   margin-bottom: 1rem;
+  display: none;
+  text-align: center;
 }
 
 /* .user-info {
